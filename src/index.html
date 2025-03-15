@@ -1,15 +1,303 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>welcome</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body class="bg-gray-100 p-4">
-    <div class="max-w-2xl mx-auto">
-      <h1 class="text-2xl font-bold mb-4">Welcome</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/css/styles/styles.css">
+    <title>GAMECONNECTSHOP</title>
+ 
+</head>
+
+<body>
+    <header>
+        <a href="#inicio" class="logo">
+            <img src="/src/assets/images/logo.png" width="80" height="80" alt="logo de la marca">
+        </a>
+        <nav>
+            <a href="#inicio" class="nav-link">INICIO</a>
+            <a href="#sobre-nosotros" class="nav-link">SOBRE NOSOTROS</a>
+            <a href="#NOTICIAS-DESTACADAS">NOTICIAS</a>
+    
+            <!-- Dropdown para "INGRESAR COMO" -->
+            <div class="dropdown2">
+                <a href="#" class="nav-link dropdown-toggle2">INGRESAR COMO</a>
+                <div class="Ingresar-como">
+                    <a href="/src/empleados.html">COMO EMPLEADO</a>
+                    <a href="/src/admin.html">COMO ADMINISTRADOR</a>
+                </div>
+            </div>
+    
+            <!-- Dropdown para "SECCIONES" -->
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">SECCIONES</a>
+                <div class="dropdown-menu">
+                    <a href="#catalog-section">Catálogo de Juegos</a>
+                    <a href="#rewards-section">Recompensas y Promociones</a>
+                </div>
+            </div>
+    
+            <a href="#area-formulario" class="nav-link">SOPORTE</a>
+        </nav>
+        <div class="search-form-container">
+            <form id="search-form">
+                <input type="text" placeholder="Buscar juegos..." id="search-bar">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+    
+
+
+<div class="container" id="login-section">
+    <div class="background-video-container">
+        <video class="background-video" src="/src/assets/videos/fondito.mp4" loop autoplay muted></video>
     </div>
-    <script type="module" src="./js/index.js"></script>
-  </body>
+    <div class="login-form">
+        <h2>Iniciar Sesión</h2>
+        <label for="">username</label>
+        <input type="text" id="username" placeholder="Nombre de usuario">
+        <label for="">password</label>
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Ingresar</button>
+    </div>
+</div>
+ 
+    <section id="inicio" style="display: none;">
+        <div class="intro-container">
+             <video class="video-principal" src="/src/assets/videos/fondito.mp4" loop autoplay muted ></video>
+            <div class="logo-container">
+                <h1 class="logo-text">GAME CONNECT</h1>
+            </div>
+            <div class="btn-container">
+                <button class="buy-btn">Empezar a jugar</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="catalog-section" style="display: none;">
+     <div class="emcabezado-2">
+            <h2 class="ct-juegos">CATALOGO DE JUEGOS</h2>
+            <section id="filters" style="display: none;">
+                <div class="filter">
+                    <label for="genre">Género:</label>
+                    <select id="genre">
+                        <option value="all">Todos</option>
+                        <option value="action">Acción</option>
+                        <option value="adventure">Aventura</option>
+                        <option value="rpg">RPG</option>
+                        <option value="strategy">Estrategia</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="platform">Plataforma:</label>
+                    <select id="platform">
+                        <option value="all">Todas</option>
+                        <option value="pc">PC</option>
+                        <option value="playstation">PlayStation</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="switch">Nintendo Switch</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="platform">Tematica</label>
+                    <select id="platform">
+                        <option value="all">Todas</option>
+                        <option value="pc">Anime</option>
+                        <option value="playstation">Ciencia ficción y ciberpunk</option>
+                        <option value="xbox">Detectives y misterio</option>
+                        <option value="switch">Supervivencia</option>
+                    </select>
+                </div>
+            </section>
+        </div>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="/src/assets/images/aaaareddead.jpg" alt="Game Cover" width="200" height="200">
+                    <h4>Precio: 280.000$</h4>
+                    <p class="availability">Disponibilidad: Disponible</p>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Comprar</button>
+                   <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Alquilar</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/aaNota-4-1.jpg" alt="Game Cover" width="200" height="200">
+                    <h4>Precio: 250.000$</h4>
+                    <p class="availability">Disponibilidad: Agotado</p>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Comprar</button></a>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Alquilar</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/arust.jpg" alt="Game Cover" width="200" height="200">
+                    <h4>Precio: 100.000$</h4>
+                    <p class="availability">Disponibilidad: Disponible</p>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Comprar</button></a>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Alquilar</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/league-of-legends.avif" alt="Game Cover" width="200" height="200">
+                    <h4>Precio: gratis</h4>
+                    <p class="availability">Disponibilidad: Disponible</p>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Comprar</button></a>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Alquilar</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/images/mario-kart-8-deluxe_1.webp" alt="Game Cover" width="200" height="200">
+                    <h4>Precio: gratis</h4>
+                    <p class="availability">Disponibilidad: Disponible</p>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Comprar</button></a>
+                    <a href="/src/compras.html" target="_blank"><button class="btn-comprar">Alquilar</button></a>
+                </div>
+                
+            </div>
+            <button class="carousel-button right">➡</button>
+        </div>
+        <script src="script.js"></script>
+        <h2 class="noticias-actuales" id="NOTICIAS-DESTACADAS">NOTICIAS DESTACADAS</h2>
+        <div class="contenedor-actuales">
+            <div class="cubo-actuales"> <a href="#"><img class="imagenes-destacados"  src="/assets/images/capsule_616x353.jpg " alt="" width="400px" height="300px"></a>
+                <h3>23 10 2024 /  Nuevo Juego</h3>
+                <p>
+                    ¡Atención, fanáticos de la velocidad y la adrenalina! Forza Horizon 5 ha llegado para redefinir el mundo de los videojuegos de carreras, llevándote a vivir la experiencia más inmersiva y emocionante jamás vista en la franquicia. Este título, uno de los mejores en su género, te transporta a un México vibrante, donde las carreteras abiertas, las impresionantes vistas y una increíble selección de vehículos esperan por ti.
+                </p>
+            </div>
+            <div class="cubo-actuales"><a href="#"><img class="imagenes-destacados" src="/assets/images/ai-generated-8966974_1280.jpg" alt="" width="400px" height="300px"></a>
+                <h3>22 11 2024 / Ultimate Gaming Championship 2024</h3>
+                <p>Este verano, los mejores jugadores de todo el mundo se reunirán para competir en el torneo de videojuegos más esperado del año: "Ultimate Gaming Championship 2024". Con una bolsa de premios de $1,000,000 y la oportunidad de coronarse como el campeón mundial, este evento será una verdadera batalla de habilidades, estrategia y reflejos.</p></div>
+            <div class="cubo-actuales"><a href="#"><img class="imagenes-destacados" src="/assets/images/upgrade-1672367_1280.jpg" alt="" width="400px" height="300px"></a>
+                <h3> 01 01 2025 / Nueva actualizacion </h3>
+                <p>¡Atención, gamers! 🎮🚀
+
+                    ¡Game Connect está por recibir una nueva y emocionante actualización! Nos complace anunciar que muy pronto lanzaremos una serie de mejoras para ofrecerte una experiencia de compra más rápida, más intuitiva y más conectada que nunca.</p></div>
+        </div>
+        
+        <section id="rewards-section">
+            <h2 class="ryp">RECOMPENSAS Y PROMOCIONES</h2>
+            <div class="contedor-cubs" >
+            <div class="cubo1-item" >
+            <div class="reward-item">
+                <h3>10% de Descuento en tu Primera Compra</h3>
+                <p>Regístrate y obtén un 10% de descuento en tu primera compra.</p>
+            </div>
+            <div class="reward-item">
+                <h3>Programa de Puntos de Fidelidad</h3>
+                <p>Acumula puntos con cada compra y canjéalos por descuentos en futuras compras.</p>
+            </div>
+        </div>
+        <div class="cubo2-item">
+
+            <div class="reward-item">
+                <h3>Ofertas Especiales Semanales</h3>
+                <p>Consulta nuestras ofertas especiales cada semana y ahorra en tus juegos favoritos.</p>
+            </div>
+            <div class="reward-item">
+                <h3>Promoción de Recomendación</h3>
+                <p>Recomienda a un amigo y recibe un cupón de descuento en tu próxima compra.</p>
+            </div>
+        </div>
+    </div>
+        <img class="img-soporte" src="/assets/images/repair-6946846_1280.png" alt="" width=700px height=470px">
+        <div class="area-formulario" id="area-formulario">
+            <h2>Soporte tecnico</h2>
+            <form action="/enviar-queja" method="POST" enctype="multipart/form-data">
+              <div class="campo-dato">
+                <label for="nombreUsuario">Nombre:</label>
+                <input type="text" id="nombreUsuario" name="nombre" required placeholder="Tu nombre completo">
+              </div>
+        
+              <div class="campo-dato">
+                <label for="textoQueja">Indique su problema</label>
+                <textarea id="textoQueja" name="queja" rows="4" required placeholder="Describe tu problema"></textarea>
+              </div>
+        
+              <div class="campo-dato">
+                <label for="cargarArchivo">Subir archivo:</label>
+                <input type="file" id="cargarArchivo" name="archivo" accept=".jpg, .jpeg, .png, .pdf, .docx">
+              </div>
+        
+              <button class="btn-ultimo" type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+       
+           <div class="cb-sobrenosotros">
+            <section id="sobre-nosotros" style="display: none;">
+               <h2>SOBRE NOSOTROS</h2>
+               <p>Nuestra tienda fue fundada con la misión de ofrecer la mejor selección de videojuegos para todas las plataformas. Desde nuestros comienzos, hemos trabajado para construir una comunidad de jugadores y ofrecer promociones que premian la lealtad.</p>
+           </section>
+
+    </div>
+        <section id="contacto" style="display: none;">
+            <h2>Contacto</h2>
+            <p>Correo: info@gameconectshop.com</p>
+            <p>Teléfono: +123 456 789</p>
+            <p>Facebook: <a href="https://facebook.com/gameconectshop" target="_blank">facebook.com/gameconectshop</a></p>
+            <p>Dirección: Calle 123, Ciudad, País</p>
+            
+        </div>
+        </section>
+        
+
+    </div>
+   
+    <div class="social-bubbles">
+        <a href="https://facebook.com" target="_blank" class="social-bubble facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-bubble twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-bubble instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+</div>
+    
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "usuario" && password === "1234") {
+               
+                document.getElementById('login-section').style.display = 'none';
+
+              
+                document.getElementById('inicio').style.display = 'block';
+                document.getElementById('catalog-section').style.display = 'block';
+                document.getElementById('filters').style.display = 'block';
+                document.getElementById('sobre-nosotros').style.display = 'block';
+                document.getElementById('contacto').style.display = 'block';
+                document.getElementById('rewards-section').style.display = 'block';
+
+                Swal.fire({
+                    title: "¡Bienvenido!",
+                    text: "Has iniciado sesión correctamente.",
+                    icon: "success",
+                    confirmButtonText: "Continuar",
+                    confirmButtonColor: "#3085d6",
+                    background: "#f7f7f7",
+                    color: "#333",
+                    customClass: {
+                        popup: 'popup-alert',
+                        title: 'title-alert',
+                        confirmButton: 'confirm-button-alert',
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: "Error",
+                    text: "Nombre de usuario o contraseña incorrectos.",
+                    icon: "error",
+                    confirmButtonText: "Intentar de nuevo",
+                    confirmButtonColor: "#d33",
+                });
+            }
+        }
+    </script>
+        <footer>
+            <p>&copy; 2025 gameconnect. Todos los derechos reservados.</p>
+        </footer>
+</body>
 </html>

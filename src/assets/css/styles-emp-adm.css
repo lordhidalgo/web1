@@ -54,7 +54,7 @@ main {
 }
 
 section {
-    background-image: url(../imagenes/4873411.jpg);
+    background-image: url(/src/assets/images/fondo1.jpg);
     background-position: top;
     background-size: contain;
     margin: 20px 0;

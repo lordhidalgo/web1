@@ -187,7 +187,7 @@ button {
 }
 
 #catalog-section {
-    background-image: url(/src/assets/images/fondo3.jpg);
+    background-image: url(../images/fondo3.jpg);
     background-position: top;
     background-size: contain;
 }
@@ -201,7 +201,7 @@ header {
     min-height: 48px;
     align-items: center;
     padding: 20px;
-    background-image: url(/src/assets/images/fondo2.jpg);
+    background-image: url(../images/fondo2.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -272,7 +272,7 @@ nav a:hover {
 }
 
 #filters {
-    background-image: url(/src/assets/images/fondo2.jpg);
+    background-image: url(../images/fondo2.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -346,7 +346,7 @@ nav a:hover {
 
 .reward-item {
     padding: 1%;
-    background-image: url(/src/assets/images/fondo2.jpg);
+    background-image: url(../images/fondo2.jpg);
     background-position: center;
     background-size: auto;
     border-radius: 5px;
@@ -475,7 +475,7 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1200px;
-    background-image: url(/src/assets/images/fondo2.jpg);
+    background-image: url(../images/fondo2.jpg);
     background-position: center;
     background-size: cover;
     color: #ffffff;
@@ -486,7 +486,7 @@ nav a:hover {
 #contacto {
     text-align: center;
     padding: 20px;
-    background-image: url(/src/assets/images/fondo2.jpg);
+    background-image: url(../images/fondo2.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -515,7 +515,7 @@ footer {
     height: 30px;
     text-align: center;
     padding: 10px;
-    background-image: url(/src/assets/images/fondo2.jpg);
+    background-image: url(../images/fondo2.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -749,19 +749,19 @@ textarea[required] {
 }
 
 .social-bubble.facebook {
-    background-image: url(/src/assets/images/facebook-6338507_1280.webp);
+    background-image: url(../images/facebook-6338507_1280.webp);
     background-position: center;
     background-size: cover;
 }
 
 .social-bubble.twitter {
-    background-image: url(/src/assets/images/twitter.webp);
+    background-image: url(../images/twitter.webp);
     background-position: center;
     background-size: cover;
 }
 
 .social-bubble.instagram {
-    background-image: url(/src/assets/images/instagram-6338393_1280.webp);
+    background-image: url(../images/instagram-6338393_1280.webp);
     background-position: center;
     background-size: cover;
 }
